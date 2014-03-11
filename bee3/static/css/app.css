@@ -1,6 +1,7 @@
 
 body {
-    background-color: #EEECE1;
+    /*background-color: #EEECE1;*/
+    background: #FCFCFC url(../img/bg.png) repeat;
 }
 
 div#body {
