@@ -1,9 +1,156 @@
 
 body {
-    background-color: #F3F0EB;
+    background-color: #EEECE1;
 }
 
 div#body {
     max-width: 990px;
     margin: 0 auto;
+    margin-top: 10px;
+}
+
+.navbar-main {
+    margin-bottom: 5px;
+}
+
+.navbar-main .navbar-nav > li > a:hover, .navbar-main .navbar-nav > li > a:focus,
+.navbar-main-right > a:hover, .navbar-main-right > a:focus {
+    color: rgb(51, 51, 51);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-main .navbar-nav > li > a,
+.navbar-main-right > a {
+    /*color: rgb(102, 102, 102);*/
+}
+
+.navbar-main-right > button {
+    width: 100%;
+}
+
+#search_bar .col-sm-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input-group-label {
+    display: table-cell;
+    width: 1%;
+
+    height: 30px;
+    padding-right: 10px;
+    padding-left: 0px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.vertical-align {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.article {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article .title a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+/ / font-weight : bold;
+}
+
+.article .listing-price {
+    color: rgb(120, 192, 66);
+    float: right;
+}
+
+.article .listing-price, .article .shopname {
+    font-size: 13px;
+}
+
+.article .shopname {
+    color: rgb(178, 178, 178);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px 0px;
+    min-width: 600px;
+}
+
+.dropdown-menu-large > li > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu-large > li > ul > li {
+    list-style: none;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+    display: block;
+    padding: 3px 5px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal;
+    font-size: 12px;
+}
+
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+    color: #999999;
+}
+
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+    text-decoration: none;
+    background: transparent none;
+    cursor: not-allowed;
+}
+
+.dropdown-menu-large .dropdown-header,
+.dropdown-menu-large li.dropdown-header > a {
+    color: rgb(255, 133, 27);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu-large > li {
+        margin-bottom: 30px;
+    }
+
+    .dropdown-menu-large > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .dropdown-menu-large .dropdown-header {
+        padding: 3px 15px !important;
+    }
 }

@@ -1,0 +1,33 @@
+
+    <nav class="navbar navbar-main" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Buy&Sell"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                    </li>
+                </ul>
+                <!-- Right Nav Section -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="divider"></li>
+
+                    <li>
+                        <div class="navbar-main-right">
+                            <a href="#"><span class="glyphicon glyphicon-user"></span> Votre compte</a>&nbsp;&nbsp;<a href="#"> <span class="glyphicon glyphicon-log-out"></span> Déconnexion</a><br/>
+                            <button type="submit" class="btn btn-warning"> Déposer une annonce </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

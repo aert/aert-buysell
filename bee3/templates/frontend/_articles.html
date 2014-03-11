@@ -1,0 +1,19 @@
+<div class="row">
+    {% for art in articles %}
+
+    <div class="col-sm-3">
+        <div class="thumbnail article">
+            <img data-src="holder.js/300x200" alt="{{ art.title }}">
+
+            <div class="caption">
+                <div class="title"><a href="#">{{ art.title }}</a></div>
+                <span class="listing-price">{{ art.price }} €</span>
+                <span class="shopname">{{ art.desc }}</span>
+            </div>
+
+
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
