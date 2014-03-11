@@ -1,0 +1,9 @@
+
+body {
+    background-color: #F3F0EB;
+}
+
+div#body {
+    max-width: 990px;
+    margin: 0 auto;
+}

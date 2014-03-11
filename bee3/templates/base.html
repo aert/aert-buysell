@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if title %}
+        {{ title }} - Bee3
+        {% else %}
+        Bee3
+        {% endif %}
+    </title>
+
+    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- If you are using the gem version, you need this only -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/app.css') }}">
+
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+</head>
+<body>
+<div id="body">
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse"
+                 id="bs-example-navbar-collapse-1">
+                <!-- Right Nav Section -->
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="#"><span
+                                class="glyphicon glyphicon-user"></span>
+                            {{ _('You Profile') }}
+                        </a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li><a href="#">
+                        <span class="glyphicon glyphicon-log-out"></span>
+                        {{ _('Logout') }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {# --- RECHERCHE ----------------------------------------------------------#}
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form class="navbar-form navbar-left" role="search" method="post" name="search" action="">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <a class="brand" href="#">Bee3</a>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                           placeholder='{{ _("Search") }}'/>
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-warning">{{
+                                            _('Search') }}
+                                        </button>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    {# --- RECHERCHE ---------------------------------------------------------- #}
+    <!--<div class="container">-->
+
+        {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+        {% for categ, msg in messages %}
+        <div class="alert alert-{{ " warning" if categ == "message" else categ }} alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ msg }}<br/>
+        </div>
+         {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}
+        {% endblock %}
+
+    <!--</div>-->
+</div>
+
+<!-- Javascript -->
+
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

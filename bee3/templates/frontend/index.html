@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-3">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Toutes catégories <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Toutes catégories</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">-- VEHICULES --</a></li>
+                                <li><a href="#">-- IMMOBILIER --</a></li>
+                                <li><a href="#">-- MULTIMEDIA --</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Alsace <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Toutes les régions</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Alsace</a></li>
+                                <li><a href="#">Rhône</a></li>
+                                <li><a href="#">Alpes</a></li>
+                            </ul>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Ville ou code postal" size="40"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
