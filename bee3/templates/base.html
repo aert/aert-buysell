@@ -17,15 +17,13 @@
     <!-- If you are using the gem version, you need this only -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 
-    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+{#    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>#}
 </head>
 <body>
 <div id="body">
     {% include "_navbar.html" %}
     {% include "_searchbar.html" %}
     {% include "_searchbar_details.html" %}
-
-    <!--<div class="container">-->
 
     {% with messages = get_flashed_messages(with_categories=True) %}
     {% if messages %}
@@ -43,7 +41,7 @@
         {% endblock %}
     </div>
 
-    <!--</div>-->
+    {% include "_footer.html" %}
 </div>
 
 <!-- Javascript -->
