@@ -27,3 +27,20 @@ def index():
                            articles=articles)
 
 
+@app.route('/article')
+def article():
+    desc = """
+    <p><br/>
+    Auto verkeerd in goede staat. Zit netjes in de lak, bekleding is op een klein gat na helemaal intact.
+    <br/>
+    Auto heeft altijd netjes bij ons binnen gestaan. De auto heeft een elektrisch bedienbaar dak en er zit airco op. en staat op mooie bbs velgen met nog zo goed als nieuwe Bridgestone banden.
+    <br/><br/>
+    Kortom een volledig rijk uitgevoerde Golf Cabrio uit het bouwjaar 2000 voor een scherpe prijs.
+    </p>
+    """
+
+    item = {"title": u"Golf 4 GTI TDI 110 cuir beige distri neuve carnet",
+            "price": "30", "city": u"Strasbourg / Bas-Rhin",
+            "desc": desc}
+    return render_template("frontend/articles_detail.haml",
+                           item=item)

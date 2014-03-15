@@ -1,11 +1,10 @@
 .row
     -for art in articles:
         .col-sm-3.col-xs-6
-            .thumbnail.article
+            %a.thumbnail.article href="{{ url_for('article') }}"
                 %img data-src="holder.js/200x200" alt="{{ art.title }}"
-
                 .caption
-                    .title -> %a href="#" << {{ art.title }}
+                    .title << {{ art.title }}
                     %span.listing-price"  << {{ art.price }} €
                     %span.shopname        << {{ art.desc  }}
 %hr
