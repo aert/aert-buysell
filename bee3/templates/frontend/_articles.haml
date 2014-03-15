@@ -1,0 +1,20 @@
+.row
+    -for art in articles:
+        .col-sm-3.col-xs-6
+            .thumbnail.article
+                %img data-src="holder.js/200x200" alt="{{ art.title }}"
+
+                .caption
+                    .title -> %a href="#" << {{ art.title }}
+                    %span.listing-price"  << {{ art.price }} €
+                    %span.shopname        << {{ art.desc  }}
+%hr
+.text-center
+    %ul.pagination
+        %li.disabled  -> %a href="#" -> &laquo; PAGE PRÉCÉDENTE
+        %li.active    -> %a href="#" -> 1
+        %li.hidden-xs -> %a href="#" -> 2
+        %li.hidden-xs -> %a href="#" -> 3
+        %li.hidden-xs -> %a href="#" -> 4
+        %li.hidden-xs -> %a href="#" -> 5
+        %li           -> %a href="#" -> PAGE SUIVANTE &raquo;

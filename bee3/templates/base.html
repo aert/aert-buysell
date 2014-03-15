@@ -22,8 +22,8 @@
 <body>
 <div id="body">
     {% include "_navbar.html" %}
-    {% include "_searchbar.html" %}
-    {% include "_searchbar_details.html" %}
+    {% include "_searchbar.haml" %}
+    {% include "_searchbar_details.haml" %}
 
     {% with messages = get_flashed_messages(with_categories=True) %}
     {% if messages %}
@@ -41,7 +41,7 @@
         {% endblock %}
     </div>
 
-    {% include "_footer.html" %}
+    {% include "_footer.haml" %}
 </div>
 
 <!-- Javascript -->

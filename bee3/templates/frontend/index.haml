@@ -1,0 +1,26 @@
+-extends "base.html"
+
+
+-block content
+
+    %br
+    .row
+        .col-xs-12
+            .btn-group.btn-group-sm
+                %button.btn.btn-primary type="button" << Toutes
+                %button.btn.btn-default type="button" << Particuliers
+                %button.btn.btn-default type="button" << Professionnels
+
+            .btn-group.btn-group-sm.pull-right
+                %button.btn.btn-default.dropdown-toggle type="button" class="" data-toggle="dropdown"
+                    Trier par Les plus Récents
+                    %span.caret.
+
+                %ul.dropdown-menu role="menu"
+                    %li -> %a href="#" << Les plus récents
+                    %li -> %a href="#" << Les prix les plus bas
+                    %li -> %a href="#" << Les prix les plus hauts
+                    %li -> %a href="#" << Les plus anciens
+
+    %br
+    -include "frontend/_articles.haml"

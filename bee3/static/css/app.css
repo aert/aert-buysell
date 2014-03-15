@@ -135,8 +135,9 @@ hr {
     font-size: 12px;
     font-weight: bold;
 }
-.nohistory, .nohistory a:link, .nohistory a:visited {
-    color: rgb(51, 102, 153);
+.category_group a, .category_group a:link, .category_group a:visited {
+    /*color: rgb(51, 102, 153);*/
+    display: block;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 .dropdown-large {

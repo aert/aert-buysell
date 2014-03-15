@@ -1,9 +1,13 @@
 # coding=utf-8
 from flask import Flask, render_template
+from hamlish_jinja import HamlishExtension
 
 
 app = Flask(__name__)
 app.config.from_object("bee3.config")
+app.jinja_env.add_extension(HamlishExtension)
+app.jinja_env.hamlish_file_extensions = ('.haml', )
+app.jinja_env.hamlish_enable_div_shortcut = True
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -19,7 +23,7 @@ def index():
         {"title": u"Anciens livres brochés", "price": "", "desc": u"Strasbourg / Bas-Rhin"},
         {"title": u"Moteur 350 rdlc 31k", "price": "800", "desc": u"Strasbourg / Bas-Rhin"},
     ]
-    return render_template("frontend/index.html",
+    return render_template("frontend/index.haml",
                            articles=articles)
 
 

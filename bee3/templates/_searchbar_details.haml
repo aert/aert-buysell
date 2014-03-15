@@ -1,0 +1,66 @@
+%form role=form
+    .panel.panel-default
+        .panel-body style="padding-bottom:0px;"
+            .row
+                .col-sm-6
+                    .form-group
+                        .row
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Prix</strong> min.
+                                    %select#criteria_price_start.form-control name="criteria[price_start]"
+                                        %option value="" << Prix min.
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Prix</strong> max.
+                                    %select#criteria_price_end.form-control name="criteria[price_end]"
+                                        %option value="" << Prix max.
+                .col-sm-6
+                    .form-group
+                        .row
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Année</strong> max.
+                                    %select#criteria_year_start.form-control name="criteria[year_start]"
+                                        %option << 2014
+                                        %option << 2013
+                                        %option << 2012
+                                        %option << 2011
+                                        %option << 2010
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Année</strong> min.
+                                    %select#criteria_year_end.form-control name="criteria[year_end]"
+                                        %option << 2014
+                                        %option << 2013
+                                        %option << 2012
+                                        %option << 2011
+                                        %option << 2010
+            .row
+                .col-sm-5
+                    .form-group
+                        .row
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>KM</strong> min.
+                                    %select#criteria_km_start.form-control name="criteria[km_start]"
+                                        %option value="" << KM min.
+                            .col-sm-6
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>KM</strong> max.
+                                    %select#criteria_km_end.form-control name="criteria[km_end]"
+                                        %option value="" << KM max.
+                .col-sm-7
+                    .form-group
+                        .row
+                            .col-sm-5
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Energie</strong>
+                                    %select.form-control
+                                        %option value="" << Energie
+                            .col-sm-7
+                                .input-group.input-group-sm
+                                    %span.input-group-addon << <strong>Boite de vitesse</strong>
+                                    %select.form-control
+                                        %option value="" << Boite de vitesse
+

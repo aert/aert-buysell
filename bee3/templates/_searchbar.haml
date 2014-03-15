@@ -1,0 +1,22 @@
+%div#search_bar.panel.panel-default
+    .panel-body
+        %form.navbar-form.navbar-left role="search" method="post" name="search" action="" style="width:99%"
+            .row
+                .col-sm-8
+                    -include "_searchbar_categs.haml"
+
+                .col-sm-4
+                    .input-group
+                        .input-group-btn
+                            %button.btn.btn-default.dropdown-toggle type="button" data-toggle="dropdown"
+                                Alsace
+                                %span.caret
+                            %ul.dropdown-menu
+                                %li -> %a href="#" << Toutes les régions
+                                %li.divider
+                                %li -> %a href="#" << Alsace
+                                %li -> %a href="#" << Rhône
+                                %li -> %a href="#" << Alpes
+                            
+                        %input.form-control type="text" placeholder="Ville ou code postal" size="40"
+
