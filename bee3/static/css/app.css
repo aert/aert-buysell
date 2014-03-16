@@ -146,6 +146,12 @@ hr {
 
 #account-block > a {
 }
+
+.thumbnail-article {
+    border:none;
+    margin-bottom:0px;
+    padding: 0px;
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 .dropdown-large {
     position: static !important;

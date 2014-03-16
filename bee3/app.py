@@ -40,7 +40,7 @@ def article():
     """
 
     item = {"title": u"Golf 4 GTI TDI 110 cuir beige distri neuve carnet",
-            "price": "30", "city": u"Strasbourg / Bas-Rhin",
+            "price": "4000", "city": u"Strasbourg / Bas-Rhin",
             "desc": desc}
     return render_template("frontend/articles_detail.haml",
                            item=item)

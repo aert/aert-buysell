@@ -1,0 +1,8 @@
+%ol.breadcrumb
+  %li -> %a href="{{ url_for('index') }}" << Accueil
+  -if request.path == url_for('article'):
+    %li -> %a href="{{ url_for('index') }}" << Véhicules
+    %li -> %a href="{{ url_for('index') }}" << Voitures
+    %li.active << {{ item.title }}
+  -else:
+    %li.active << Toutes les annonces

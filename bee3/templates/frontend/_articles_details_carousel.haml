@@ -1,0 +1,27 @@
+%div#carousel-item.carousel.slide data-ride="carousel" data-interval="false"
+  ;<!-- Indicators -->
+  %ol.carousel-indicators
+    %li.active data-target="#carousel-item" data-slide-to="0"
+    %li data-target="#carousel-item" data-slide-to="1"
+    %li data-target="#carousel-item" data-slide-to="2"
+    %li data-target="#carousel-item" data-slide-to="3"
+  ;<!-- Wrapper for slides -->
+  .carousel-inner
+    .item.active
+      .thumbnail.thumbnail-article
+        %img src="http://upload.wikimedia.org/wikipedia/commons/6/65/VW_Golf_IV.jpg" alt="Image"
+    .item
+      .thumbnail.thumbnail-article
+        %img src="http://media.voiture-miniature.com/images_miniatures/tunerdeyoshi_golf_4_1.jpg" alt="Image"
+    .item
+      .thumbnail.thumbnail-article
+        %img src="http://www.passionautomobile.info/images/essais/vw/golf4.jpg" alt="Image"
+    .item
+      .thumbnail.thumbnail-article
+        %img src="http://1.bp.blogspot.com/-5NX6rT_c5v4/T7RLs41eZTI/AAAAAAAAATE/kuRKISRHdoM/s1600/Golf_4_r32_5.jpg" alt="Image"
+
+  ;<!-- Controls -->
+  %a.left.carousel-control href="#carousel-item" data-slide="prev"
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control href="#carousel-item" data-slide="next"
+    %span.glyphicon.glyphicon-chevron-right

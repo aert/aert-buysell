@@ -8,8 +8,7 @@
     .panel-body
       .row
         .col-sm-8
-          .thumbnail
-            %img data-src="holder.js/600x500" alt="Image"
+          -include "frontend/_articles_details_carousel.haml"
           %table.table
             %tr
               %td << Prix:
@@ -19,7 +18,7 @@
               %td << {{ item.city }}
         .col-sm-4
           %p
-            %button.btn.btn-primary.btn-lg.btn-block type="button" << Contacter l'annonceur par email
+            %button.btn.btn-primary.btn-lg.btn-block type="button" << Répondre à l'annonce
             %a.btn.btn-default.btn-lg.btn-block href="tel:06.85.85.44.66"
               %span.glyphicon.glyphicon-phone-alt << &nbsp;06.85.85.44.66
       .row
