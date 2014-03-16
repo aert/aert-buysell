@@ -6,6 +6,7 @@ body {
 
 div#body {
     max-width: 990px;
+    min-width: 430px;
     margin: 0 auto;
     margin-top: 10px;
     padding-left: 5px;
@@ -151,6 +152,12 @@ hr {
     border:none;
     margin-bottom:0px;
     padding: 0px;
+}
+
+.price {
+    font-weight: bold;
+    color: #DD4814;
+    font-size: 18px;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 .dropdown-large {

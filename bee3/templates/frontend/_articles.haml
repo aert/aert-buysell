@@ -2,7 +2,7 @@
     -for art in articles:
         .col-sm-3.col-xs-6
             %a.thumbnail.article href="{{ url_for('article') }}"
-                %img data-src="holder.js/200x200" alt="{{ art.title }}"
+                %img src="http://lorempixel.com/300/200/?{{ loop.index }}" alt="{{ art.title }}"
                 .caption
                     .title << {{ art.title }}
                     %span.listing-price"  << {{ art.price }} €
