@@ -31,8 +31,10 @@ nosetests.xml
 # Translations
 *.mo
 
+# Other
 test.db
 test_tests.db
+fabfile.py
 
 # Mr Developer
 .mr.developer.cfg
