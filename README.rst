@@ -1,7 +1,7 @@
 Buy & Sell
 ==========
 
-Mockups of the next big thing.
+Mockups of the next big thing :)
 
 How to run the demo server : ``python manage.py``
 
