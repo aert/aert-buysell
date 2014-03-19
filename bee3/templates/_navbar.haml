@@ -19,6 +19,7 @@
                 %li
                     .navbar-main-right
                         %div#account-block
-                            %a href="#" -> %span.glyphicon.glyphicon-user << Votre_compte&nbsp;
-                            %a href="#" -> %span.glyphicon.glyphicon-log-out << Déconnexion
-                        %button.btn.btn-primary type="submit" << Déposer une annonce
+                            %a.navbar-main-right-secondary href="#" -> %span.glyphicon.glyphicon-user << Votre_compte&nbsp;
+                            %a.navbar-main-right-secondary href="#" -> %span.glyphicon.glyphicon-log-out << Déconnexion
+                        %a.btn.btn-block.btn-primary type="button" href="{{ url_for('article_add') }}"
+                            Déposer une annonce

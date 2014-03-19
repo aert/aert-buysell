@@ -51,3 +51,8 @@ def article():
             "desc": desc}
     return render_template("frontend/articles_detail.haml",
                            item=item)
+
+
+@app.route('/article-new')
+def article_add():
+    return render_template("frontend/articles_add.haml")
