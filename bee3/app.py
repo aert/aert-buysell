@@ -40,7 +40,7 @@ def index():
         {"title": u"Machine à café tassimo", "price": "40", "desc": u"Strasbourg"},
         {"title": u"Sac randonnée", "price": "40", "desc": u"Schweighouse-sur-Moder"},
     ]
-    return render_template("frontend/index.haml",
+    return render_template("frontend/index.haml", show_searchbar=True,
                            articles=articles)
 
 
@@ -60,6 +60,7 @@ def article():
             "price": "4000", "city": u"Strasbourg",
             "desc": desc}
     return render_template("frontend/articles_detail.haml",
+                           show_searchbar=True,
                            item=item)
 
 
