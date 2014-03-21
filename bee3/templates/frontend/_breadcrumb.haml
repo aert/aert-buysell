@@ -4,5 +4,7 @@
     %li -> %a href="{{ url_for('index') }}" << Véhicules
     %li -> %a href="{{ url_for('index') }}" << Voitures
     %li.active << {{ item.title }}
+  -elif request.path.startswith(url_for('article_add')):
+    %li.active << Déposer une annonce
   -else:
     %li.active << Toutes les annonces

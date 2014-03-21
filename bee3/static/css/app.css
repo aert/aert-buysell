@@ -13,6 +13,10 @@ div#body {
     padding-right: 5px;
 }
 
+.color-primary {
+    color: #DD4814;
+}
+
 .navbar-toggle {
     border-color: grey;
 }
@@ -129,7 +133,7 @@ hr {
     color: rgb(51, 102, 153);
 }
 
-#categories_container {
+.categories_container {
     margin-top: 30px;
     overflow: hidden;
 }
@@ -142,6 +146,11 @@ hr {
 .category_group a, .category_group a:link, .category_group a:visited {
     /*color: rgb(51, 102, 153);*/
     display: block;
+}
+.categories_container_select .category_group a,
+.categories_container_select .category_group a:link,
+.categories_container_select .category_group a:visited {
+    color: rgb(51, 102, 153);
 }
 
 #account-block > a {

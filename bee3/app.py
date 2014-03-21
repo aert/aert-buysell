@@ -64,5 +64,7 @@ def article():
 
 
 @app.route('/article-new')
-def article_add():
-    return render_template("frontend/articles_add.haml")
+@app.route('/article-new/<int:categ>')
+def article_add(categ=0):
+    return render_template("frontend/articles_add.haml",
+                           categ=categ)

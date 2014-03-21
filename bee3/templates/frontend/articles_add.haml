@@ -3,8 +3,18 @@
 
 -block content
 
-  .panel.panel-default
-    .panel-heading
-      %h3 << Créez votre annonce, c'est GRATUIT !
-    .panel-body
-      %form
+
+    .panel.panel-default
+        .panel-heading
+            %h4
+                Publier une annonce gratuite :
+        .panel-body
+            -if categ < 1:
+                %h5.color-primary -> %strong << Sélectionnez une catégorie :
+                -include "_categories.haml"
+            -else:
+                %h5.color-primary -> %strong << Votre annonce :
+                %form role="form"
+                    %p
+                        %button.btn.btn-primary type="submit" << Publier l'annonce
+
