@@ -42,3 +42,7 @@ fabfile.py
 .pydevproject
 .idea
 /working
+
+# Assets
+/bee3/static/.webassets-cache/
+/bee3/static/gen/

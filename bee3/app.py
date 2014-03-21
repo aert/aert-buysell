@@ -1,6 +1,8 @@
 # coding=utf-8
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
+from flask.ext.assets import Environment
 from hamlish_jinja import HamlishExtension
+from os import path
 
 
 app = Flask(__name__)
@@ -9,6 +11,14 @@ app.jinja_env.add_extension(HamlishExtension)
 app.jinja_env.hamlish_file_extensions = ('.haml', )
 app.jinja_env.hamlish_enable_div_shortcut = True
 
+# Assets
+assets = Environment(app)
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(path.join(app.root_path, 'static'),
+                               'img/favicon.ico')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
